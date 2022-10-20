@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+.logo{
+    max-width:100px;
+ }
+
+ .header-left {
+    float: left;
+    display: inline-flex;
+}
+
+.header-right {
+    float: right;
+    display: inline-flex;
+    line-height: 70px;
+}
+
+.header-right a{
+    padding: 0 25px;
+    color: rgb(184, 182, 182);
+}
+
+.items{
+    transition: 0.5s;
+}
+
+.items:hover {
+    color: white;
+}
+
+
+#register-btn {
+    color:rgb(184, 182, 182);
+    padding: 0 25px;
+    transition: 0.5s;
+}
+
+#register-btn:hover {
+    color:white;
+    background:rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+
+header{
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4%;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color:black;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgb(65, 63, 63);
+    font-weight: bold;
+}
+
+#info{
+    position : relative;
+    display: inline-block;
+}
+
+#info-dropdown{
+    display: none;
+    background-color: black;
+    color: rgb(184, 182, 182);
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+
+#info:hover #info-dropdown{
+    display: block;
+}
+.item{
+    transition: 0.5s;
+
+}
+
+.item:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+.menu{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+  
+.menu-icon {
+    padding-bottom: 10px;
+    display: none;
+}
+
+/* BODY */
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url('../asset/bg-bottom.png');
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container1 h1 {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 6px;
+    font-weight: bold;
+    position: relative;
+}
+
+.heading h1{
+    padding-bottom: 20px;
+}
+
+.bottom-wrapper{
+    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgb(231, 230, 230);
+    text-align: center;
+}
+
+.container2 {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+.heading h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.icon{
+    width: 450px;
+    padding-top: 7%;
+}
+
+.map{
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    border-radius: 6px;
+    margin: 20px 50px;
+    box-shadow: 7px 7px 5px rgb(116, 113, 113);
+    transition: 0.5s;
+}
+
+.map p{
+    width: 70%;
+    display: inline-block;
+    color: white;
+}
+
+.map-icon{
+    text-align: center;
+}
+
+.map-icon h4{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    color: white;
+}
+
+.text {
+    text-align: center;
+    font-weight: 350;
+    font-size: 13px;
+}
+
+.maps{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.map:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+/* FOOTER */
+footer {
+    color: rgb(184, 182, 182);
+    padding: 50px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+
+.footer-logo {
+    max-width:100px;
+}
+
+.footer-socmed {
+    display: inline-flex;
+}
+
+.socmed-logo {
+    display: inline-block;
+    max-width: 55px;
+    padding: 10px 8px;
+    margin: 15px;
+}
+
+.footer-middle p {
+    line-height: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+}
+
+.footer-bottom a {
+    padding: 0 25px;
+    display: inline-block;
+    color: rgb(184, 182, 182);
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+
+
+@media all and (max-width: 800px) {
+    *{
+      float:unset;
+      padding:unset;
+      margin:unset;
+      
+    }
+
+    /* header */
+    .header-right{
+        display:none;
+    }
+        
+    header{
+        padding-left: 5px;
+        padding-right: 25px;
+    } 
+    
+    .menu-icon{
+        padding:unset;
+        float: right;
+        display: block;
+      }
+    
+    .menu{
+        margin-right:unset;
+    }
+
+    .container1{
+        padding:unset;
+        padding:auto;
+    }
+      
+    .top-wrapper{
+        text-align: center;
+    } 
+     
+    .bottom-wrapper {
+        min-height: 2000px;
+    }
+    
+    /* content */
+    .map{
+        width:70%;
+        align-items:center;
+        padding: auto;
+        margin: 25px 0;
+    }
+      
+    .map-icon img{
+        width:90%;
+    }
+      
+    .maps{
+        align-items:center;
+        display:flex;
+        flex-direction:column;
+        padding:unset;
+    }
+
+    /* footer */
+    footer {
+        float: unset;
+        flex-direction: column;
+        min-height: 550px;
+    }
+
+    .footer-socmed {
+        flex-direction: column;
+    } 
+
+    .socmed-logo {
+        margin: 3px;
+    }
+
+    .footer-middle {
+        float: unset;
+        text-align: center;
+ 
+    }
+
+    .footer-middle p {
+        margin: 12px;
+        font-size: 8px;
+    }
+
+    .footer-click {
+        font-size: 10px;
+        width: 50%;
+    }
+} 

@@ -1,0 +1,535 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+.logo{
+    max-width:100px;
+ }
+
+ .header-left {
+    float: left;
+    display: inline-flex;
+}
+
+.header-right {
+    float: right;
+    display: inline-flex;
+    line-height: 70px;
+}
+
+.header-right a{
+    padding: 0 25px;
+    color: rgb(184, 182, 182);
+}
+
+.items{
+    transition: 0.3s;
+}
+
+.items:hover {
+    color: white;
+}
+
+
+#register-btn {
+    color:rgb(184, 182, 182);
+    padding: 0 25px;
+    transition: 0.5s;
+}
+
+#register-btn:hover {
+    color:white;
+    background:rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+
+header{
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4%;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color:black;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgb(65, 63, 63);
+    font-weight: bold;
+}
+
+#info{
+    position : relative;
+    display: inline-block;
+}
+
+#info-dropdown{
+    display: none;
+    background-color: black;
+    color: rgb(184, 182, 182);
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+
+#info:hover #info-dropdown{
+    display: block;
+}
+
+.item{
+    transition: 0.5s;
+}
+
+.item:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+.menu{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+  
+.menu-icon {
+    padding-bottom: 10px;
+    display: none;
+}
+
+/* BODY */
+
+.top-wrapper {
+    padding: 230px 0 230px 0;
+    background-image: url('../asset/body-top-bg.png');
+    background-size: cover;
+    text-align: center;
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container1 h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 6px;
+    font-weight: 300;
+  }
+
+.btn-wrapper {
+    padding-top: 20px;
+}
+
+.btn {
+    padding: 12px 38px;
+    color: black;
+    display: inline-block;
+    border-radius: 2px;
+    text-decoration: none;
+    box-shadow: 1px 1px rgb(231, 230, 230);
+    cursor: pointer;
+    background-color: rgb(231, 230, 230);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+/* about */
+.about-wrapper {
+    background-color:rgb(231, 230, 230);
+    width: 100%;
+    display: inline-flex;
+}
+
+.about-left {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 100px;
+}
+
+#about-title {
+    padding-bottom: 12px;
+}
+
+#about-title h1 {
+    margin: 2px 0;
+    font-size: 45px;
+}
+.about-left p {
+    margin: 2px 0;
+}
+
+.about-right {
+    float: right;
+    margin-left: 100px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    display: inline-flex;
+
+}
+
+
+.boxes {
+    background-color: black;
+    color: white;
+    margin: 0 30px;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.boxes p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.box-text {
+    padding-top: 10%;
+    color:rgb(184, 182, 182)
+}
+
+.box-img {
+    display: inline-block;
+    margin: auto;
+    max-width: 120px;
+    padding-top: 15%;
+}
+
+.boxes:hover {
+    transform:scale(1.2);
+}
+
+.agents-wrapper {
+    background-image: url('../asset/bg-middle.png');
+    background-size: cover;
+    padding: 240px 0;
+    width: auto;
+}
+
+.agents-left {
+    float:left;
+    margin-top: -40px;
+}
+
+#agents-desc {
+    color: white;
+    padding-left: 100px;
+}
+
+#agents-desc p {
+    margin: 2px 0;
+}
+
+#agents-button {
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#agents-btn {
+    padding: 10px 50px;
+    color: black;
+    display: inline-block;
+    border-radius: 2px;
+    text-decoration: none;
+    box-shadow: 1px 1px rgb(231, 230, 230);
+    cursor: pointer;
+    background-color: rgb(231, 230, 230);
+    font-size: 10px;
+    font-weight: bold;
+    
+}
+
+#agents-btn:hover {
+    opacity: 0.9;
+}
+
+#agents-btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+.agents-right {
+    float:right;
+    text-align: center;
+    padding-right: 100px;
+    margin-top: -90px;
+}
+
+.agents-right h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+}
+
+.maps-wrapper {
+    background-image: url('../asset/bg-bottom.png');
+    background-size: cover;
+    padding: 240px 0;
+    width: auto;
+}
+
+.maps-right {
+    float:right;
+    margin-top: -50px;
+}
+
+#maps-desc {
+    color: white;
+    padding-right: 100px;
+    text-align: right;
+}
+
+#maps-desc p {
+    margin: 2px 0;
+}
+
+#maps-button {
+    padding-right: 100px;
+    padding-top: 30px;
+    text-align: right;
+}
+
+#maps-btn {
+    padding: 10px 50px;
+    color: black;
+    display: inline-block;
+    border-radius: 2px;
+    text-decoration: none;
+    box-shadow: 1px 1px rgb(231, 230, 230);
+    cursor: pointer;
+    background-color: rgb(231, 230, 230);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#maps-btn:hover {
+    opacity: 0.9;
+}
+
+#maps-btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+.maps-left {
+    float:left;
+    text-align: center;
+    padding-left: 100px;
+    margin-top: -50px;
+}
+
+.maps-left h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    color: rgb(184, 182, 182);
+    padding: 50px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    height: 450px;
+}
+
+.footer-logo {
+    max-width:100px;
+}
+
+.footer-socmed {
+    display: inline-flex;
+}
+
+.socmed-logo {
+    display: inline-block;
+    max-width: 55px;
+    padding: 10px 8px;
+    margin: 15px;
+}
+
+.footer-middle p {
+    line-height: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+}
+
+.footer-bottom a {
+    padding: 0 25px;
+    display: inline-block;
+    color: rgb(184, 182, 182);
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 800px) {
+    *{
+      float:unset;
+      padding:unset;
+      margin:unset;
+    }
+
+    /* header */
+    .header-right{
+        display:none;
+    }
+        
+    header{
+        padding-left: 5px;
+        padding-right: 25px;
+    } 
+    
+    .menu-icon{
+        padding:unset;
+        float: right;
+        display: block;
+      }
+    
+    .menu{
+        margin-right:unset;
+    }
+
+    
+    /* content */
+    .top-wrapper{
+        text-align: center;
+    } 
+
+    .container1{
+        padding:unset;
+        padding:auto;
+    }
+
+    .boxes {
+        display: none;
+    }
+
+    .maps-left, .maps-right, .agents-right, .agents-left, .about-left {
+        padding: unset;
+        margin: unset;
+        float: unset;
+    }
+
+    .about-left {
+        text-align: center;
+        margin: 140px auto;
+        padding: 0 3px;
+    }
+
+
+    .about-right {
+        padding: unset;
+        margin: unset;
+        float: unset;
+    }
+
+    .btn-wrapper{
+        align-items:center;
+        margin:unset;
+      }
+    
+    .btn{
+        margin:unset;
+        margin-left:50%;
+        transform:translate(-50%,50%);
+        font-size: smaller;
+    }
+
+
+    .agents-right {
+        display: none;
+    }
+
+    #agents-desc {
+        padding: unset;
+        text-align: center;
+        padding: 0 3px;
+    }
+
+    #agents-button {
+        padding:unset;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .maps-left {
+        display: none;
+    }
+
+    #maps-desc {
+        padding: unset;
+        padding: 0 3px;
+        text-align: center;
+    }
+
+    #maps-button {
+        padding:unset;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+
+    /* footer */
+    footer {
+        float: unset;
+        flex-direction: column;
+        min-height: 550px;
+    }
+
+    .footer-socmed {
+        flex-direction: column;
+    } 
+
+    .socmed-logo {
+        margin: 3px;
+    }
+
+    .footer-middle {
+        float: unset;
+        text-align: center;
+ 
+    }
+
+    .footer-middle p {
+        margin: 12px;
+        font-size: 8px;
+    }
+
+    .footer-click {
+        font-size: 10px;
+        width: 70%;
+    }
+} 

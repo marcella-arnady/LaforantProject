@@ -1,0 +1,319 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: rgb(233, 230, 227);
+}
+
+*{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+  
+.logo{
+    max-width:100px;
+ }
+
+.header-left {
+    float: left;
+    display: inline-flex;
+}
+
+.header-right {
+    float: right;
+    display: inline-flex;
+    line-height: 70px;
+}
+
+.header-right a{
+    padding: 0 25px;
+    color: rgb(184, 182, 182);
+}
+
+.items{
+    transition: 0.5s;
+}
+
+.items:hover {
+    color: white;
+}
+
+
+#register-btn {
+    color:rgb(184, 182, 182);
+    padding: 0 25px;
+    transition: 0.5s;
+
+}
+
+#register-btn:hover {
+    color:white;
+    background:rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+
+header{
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4%;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color:black;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgb(65, 63, 63);
+    font-weight: bold;
+}
+
+#info{
+    position : relative;
+    display: inline-block;
+}
+
+#info-dropdown{
+    display: none;
+    background-color: black;
+    color: rgb(184, 182, 182);
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+
+#info:hover #info-dropdown{
+    display: block;
+}
+
+.item{
+    transition: 0.5s;
+}
+
+.item:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+.menu{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+  
+.menu-icon {
+    padding-bottom: 10px;
+    display: none;
+}
+
+footer {
+    color: rgb(184, 182, 182);
+    padding: 50px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+
+.footer-logo {
+    max-width:100px;
+}
+
+.footer-socmed {
+    display: inline-flex;
+}
+
+.socmed-logo {
+    display: inline-block;
+    max-width: 55px;
+    padding: 10px 8px;
+    margin: 15px;
+}
+
+.footer-middle p {
+    line-height: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+}
+
+.footer-bottom a {
+    padding: 0 25px;
+    display: inline-block;
+    color: rgb(184, 182, 182);
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+#blank{
+    height: 70px;
+}
+
+#banner{
+    background-image: url(../asset/wallpaperReq.jpeg);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner div{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* CONTENT */
+
+#content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+
+.table th {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #960101;
+    color: white;
+}
+
+.table td {
+    border: 1px solid rgb(90, 90, 90);
+    padding: 25px;
+    text-align: center;
+}
+
+/* 
+.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:nth-child(odd){background-color: #ffffff;}
+
+.table tr:hover {background-color: #ddd;}
+*/
+
+/* responsive */
+
+@media all and (max-width: 800px) {
+    *{
+      float:unset;
+      padding:unset;
+      margin:unset;
+    }
+
+    /* header */
+    .header-right{
+        display:none;
+    }
+        
+    header{
+        padding-left: 5px;
+        padding-right: 25px;
+    } 
+    
+    .menu-icon{
+        padding:unset;
+        float: right;
+        display: block;
+      }
+    
+    .menu{
+        margin-right:unset;
+    }
+
+    .container1{
+        padding:unset;
+        padding:auto;
+    }
+      
+    .top-wrapper{
+        text-align: center;
+    } 
+     
+    .bottom-wrapper {
+        min-height: 2000px;
+    }
+     /* footer */
+     footer {
+        float: unset;
+        flex-direction: column;
+        min-height: 550px;
+    }
+
+    .footer-socmed {
+        flex-direction: column;
+    } 
+
+    .socmed-logo {
+        margin: 3px;
+    }
+
+    .footer-middle {
+        float: unset;
+        text-align: center;
+ 
+    }
+
+    .footer-middle p {
+        margin: 12px;
+        font-size: 8px;
+    }
+
+    .footer-click {
+        font-size: 10px;
+        width: 70%;
+    }
+
+
+
+
+    #device th, #device tr, #device td{
+        display: block;
+        width: 90%;
+    }
+
+    #specs th {
+		display: none;
+	}
+    #specs td:first-child {
+        background-color: #960101;
+        color: white;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+	#specs td {
+		display: block;
+		text-align: right;
+        width: 90%;
+	}
+	#specs td::before {
+		float: left;
+		font-weight: bold;
+		content: attr(data-header);
+	}
+    
+} 
