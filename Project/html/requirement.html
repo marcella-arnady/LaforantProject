@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirement</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reqstyle.css">
+</head>
+<body>
+    <!-- HEADER HERE-->
+    <header>
+        <div class="header-left">
+            <a href="homepage.html">
+                <img class="logo" src="../asset/Logo LF.png" alt="">
+            </a>
+        </div>
+        
+
+        <div class="menu-icon">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>
+
+        <div class="header-right">
+            <div id="nav-item">
+                <a href="homepage.html" class="items">ABOUT</a>
+                <a href="#" class="items" id="info">
+                    INFO
+                    <div id="info-dropdown">
+                        <div onclick="location.href='agent.html'" class="item">
+                            AGENTS
+                        </div>
+                        <div onclick="location.href='maps.html'" class="item">
+                            MAPS
+                        </div>
+                    </div>
+                </a>
+                <a href="requirement.html" class="items">REQUIREMENTS</a>
+            </div>
+            <div id="register-btn">
+                <div onclick="location.href='form.html'" class="items">
+                    PRE-REGISTER
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="blank"></div>
+
+    <div id="banner">
+            <div>SPECS</div>
+    </div>
+
+    <div id="content">
+        <h1 id="req">PC Hardware Requirements</h1>
+
+        <table id="device" class="table">
+            <tr>
+                <th>Device</th>
+                <td>Windows // 7/8/10 64-bit</td>
+                <td>RAM // 4 GB</td>
+                <td>VRAM // 1 GB</td>
+            </tr>
+        </table>
+
+        <table id="specs" class="table">
+            <tr>
+                <th></th>
+                <th class="min">Minimum Specs / 30 FPS</th>
+                <th class="rec">Recommended Specs / 60 FPS</th>
+                <th class="high">High-End Specs / 144+ FPS</th>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td data-header="Minimum Specs">Intel Core 2 Duo E8400</td>
+                <td data-header="Recommended Specs">Intel i3-4150</td>
+                <td data-header="High-End Specs">Intel Core i5-4460 3.2GHZ</td>
+            </tr>
+            <tr>
+                <td>GPU</td>
+                <td data-header="Minimum Specs">Intel HD 4000</td>
+                <td data-header="Recommended Specs">Geforce GT 730</td>
+                <td data-header="High-End Specs">GTX 1050 Ti</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- FOOTER HERE -->
+    <footer>
+        <div class="footer-top">
+            <a href="homepage.html">
+                <img class="footer-logo" src="../asset/Logo LF Footer.png">
+            </a>
+        </div>
+        <div class="footer-socmed">
+            <a href="http://www.youtube.com">
+                <img class="socmed-logo" src="../asset/YT.png">
+            </a>
+            <a href="http://www.instagram.com">
+                <img class="socmed-logo" src="../asset/IG.png">
+            </a>
+            <a href="http://www.twitter.com">
+                <img class="socmed-logo" src="../asset/TWT.png">
+            </a>
+        </div>
+        <div class="footer-middle">
+            <p>&#169 LaForant Indonesia</p>
+            <p>Tradermarks belong to their respective owners</p>
+            <p>All rights Reserved</p>
+        </div>
+        <div class="footer-bottom">
+            <a class="footer-click" href="#">TERMS OF USE</a>
+            <a class="footer-click" href="#">PRIVACY POLICY</a>
+            <a class="footer-click" href="#">SUPPORT</a>
+        </div>
+    </footer>
+
+</body>
+</html>
